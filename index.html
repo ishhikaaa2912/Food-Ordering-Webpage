@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">🍽️ Food Menu</h1>
+
+<div class="menu">
+
+    <div class="card">
+        <img src="images/burger.jpg" alt="Burger">
+        <h3>Burger</h3>
+        <p class="price">₹120</p>
+        <button onclick="addToCart('Burger',120)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="images/pizza.jpg" alt="Pizza">
+        <h3>Pizza</h3>
+        <p class="price">₹200</p>
+        <button onclick="addToCart('Pizza',200)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="images/pasta.jpg" alt="Pasta">
+        <h3>Pasta</h3>
+        <p class="price">₹150</p>
+        <button onclick="addToCart('Pasta',150)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="images/fries.jpg" alt="Fries">
+        <h3>Fries</h3>
+        <p class="price">₹80</p>
+        <button onclick="addToCart('Fries',80)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="images/momos.jpg" alt="Momos">
+        <h3>Momos</h3>
+        <p class="price">₹140</p>
+        <button onclick="addToCart('Momos',140)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="images/sandwich.jpg" alt="Sandwich">
+        <h3>Sandwich</h3>
+        <p class="price">₹100</p>
+        <button onclick="addToCart('Sandwich',100)">Add to Cart</button>
+    </div>
+
+</div>
+
+<div class="cart-box">
+    <h2>🛒 Cart</h2>
+    <ul id="cart"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button class="order-btn" onclick="placeOrder()">Place Order</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
