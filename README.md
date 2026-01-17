@@ -27,5 +27,4 @@ The project allows users to browse food items, add them to a cart, view the tota
 
 ---
 
-## 📁 Project Structure
 
